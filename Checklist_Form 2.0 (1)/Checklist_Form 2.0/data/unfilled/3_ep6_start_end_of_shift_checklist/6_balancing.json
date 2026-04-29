@@ -1,0 +1,206 @@
+{
+  "checklist_type": "6_balancing",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "EP6 Balancing-3 (2)",
+  "title": "FORM:-START UP & END OF SHIFT CHECKLIST:",
+  "source_workbook": "6. BALANCING.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": []
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean fixture, Tool & working Area.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply.",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine \n(Cycle : Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the PM status of running model tool / fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Verify Jaw locking cylinder is working",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Balancing process validation \n(Calibration of machine by master sample)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Line Air pressure",
+          "specified_value": "5 TO 7 BAR",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Ensure balancing machine in auto mode",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "Wear personal protective equipments (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_12",
+          "serial_no": "1",
+          "item": "",
+          "question": "AUTO and MANUAL mode verification For OK Condition:- In AUTO mode before balancing (Before getting Intol Value) of the FM assembly try to remove fan motor assembly form fixture, FM assembly should not De-clamp. (FM-Fan Motor)\nFor NOT OK condition:- In MANUAL mode before balancing (Before getting Intol Value)  of the  fan motor assembly try to remove fan motor assembly from fixture, FM assembly will De-clamp.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "2",
+          "item": "",
+          "question": "Safety door Keep the safety door open and Try to start the machine.Machine will not Start.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_14",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean fixture, Tool & working Area.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and Record of rejection",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_17",
+          "serial_no": "1",
+          "item": "",
+          "question": "AUTO and MANUAL mode verification For OK Condition:- In AUTO mode before balancing (Before getting Intol Value) of the FM assembly try to remove fan motor assembly form fixture, FM assembly should not De-clamp. (FM-Fan Motor)\nFor NOT OK condition:- In MANUAL mode before balancing (Before getting Intol Value)  of the  fan motor assembly try to remove fan motor assembly from fixture, FM assembly will De-clamp.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "2",
+          "item": "",
+          "question": "Safety door Keep the safety door open and Try to start the machine.Machine will not Start.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

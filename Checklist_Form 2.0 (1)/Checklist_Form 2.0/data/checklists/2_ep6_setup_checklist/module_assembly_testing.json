@@ -1,0 +1,327 @@
+{
+  "slug": "module_assembly_testing",
+  "title": "SET UP CHANGE CHECK LIST - MODULE ASSEMBLY & TESTING (Radiator Assembly Cell 4)",
+  "category": "2. EP6 SETUP Checklist",
+  "machine_type": "ASSY AND TESTING",
+  "source_workbook": "MODULE ASSEMBLY & TESTING.xlsx",
+  "source_sheet": "ASSY AND TESTING",
+  "metadata_fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "answer_type": "Date",
+      "input_type": "date",
+      "required": true
+    },
+    {
+      "id": "condition",
+      "label": "Condition",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "model_change_from",
+      "label": "Model Change From",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "model_to",
+      "label": "Model to",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "shift",
+      "label": "Shift",
+      "answer_type": "A/B/C",
+      "input_type": "select",
+      "required": true,
+      "options": [
+        "",
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "Preparation",
+          "question": "Check the availability of material as per Material Matrix for Production.",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "Refer the Set Up Condition Matrix for next Set up or Model Change.",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Check the trolley availability for next model",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the availability of allenkey set for setup change",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "ON LINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "Remove",
+          "question": "Remove the allen bolt & loose the beamas of the fixture ( Module assly & Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Keep the beams in down side which is not required for setup ( Module assly & Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "Fit",
+          "question": "Straighten the beam in upward and tight with allen bolt  ( module assly & Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Take the supply connector for the next model and connect it in the machine (testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "Adjust",
+          "question": "Change the programme as per WI (Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "Check",
+          "question": "Check the connector is properly locked (Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Check the sensor working as per required model ( Module assly & Testing)",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Mention the progamme name in First Piece.",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_13",
+          "serial_no": "13",
+          "item": "",
+          "question": "Check condition of all removed tools if found ok then put ok tag if found not ok send for correction",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "14",
+          "item": "",
+          "question": "Remove all previous model materials if not required",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "15",
+          "item": "",
+          "question": "Produce & fill the First Piece.",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "Created By",
+          "item": "",
+          "question": "Yogesh C",
+          "answer_type": "OK/NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ],
+  "closing_fields": [
+    {
+      "id": "set_up_start_time",
+      "label": "SET UP START TIME",
+      "answer_type": "Timestamp",
+      "input_type": "datetime-local",
+      "required": true
+    },
+    {
+      "id": "set_up_end_time",
+      "label": "SET UP END TIME",
+      "answer_type": "Timestamp",
+      "input_type": "datetime-local",
+      "required": true
+    },
+    {
+      "id": "total_set_up_time",
+      "label": "TOTAL SET UP TIME",
+      "answer_type": "Hours",
+      "input_type": "number",
+      "required": true
+    },
+    {
+      "id": "set_up_done_by",
+      "label": "SET UP DONE BY  :",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    }
+  ],
+  "notes": [
+    [
+      "A) Condition:- At set up change check list is being carried out     \n1) Set up change [Change of model (program &  fixture)] \n2) Machine break down\n3) Fixture wear part replacement/fixture modification \n4) Development trial\nB) Reactivity Rule:- If any NC is found during set up inform to CC/Shift incharge wait for a dissision & Raise  the break down intimation slip & after the closure of NC, Do set up & record observations in the set up change check list/Start up & end check list (If applicable)"
+    ]
+  ]
+}

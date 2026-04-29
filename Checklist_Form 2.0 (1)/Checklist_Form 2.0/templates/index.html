@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Checklist Selector{% endblock %}
+{% block content %}
+<main class="selector-page">
+  <section class="hero">
+    <p class="eyebrow">Checklist Workspace</p>
+    <h1>Select a checklist to fill</h1>
+    <p class="hero-copy">Each form is generated from the Excel source and saves the completed checklist as JSON.</p>
+  </section>
+
+  {% for group in manifest_groups %}
+  <section class="group-block">
+    <div class="group-header">
+      <p class="eyebrow">Category</p>
+      <h2>{{ group["name"] }}</h2>
+    </div>
+
+    <div class="card-grid">
+      {% for checklist in group["items"] %}
+      <a class="checklist-card" href="{{ checklist.form_path }}">
+        <span class="card-label">Open Form</span>
+        <h3>{{ checklist.title }}</h3>
+        <p>{{ checklist.source_workbook }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</main>
+{% endblock %}

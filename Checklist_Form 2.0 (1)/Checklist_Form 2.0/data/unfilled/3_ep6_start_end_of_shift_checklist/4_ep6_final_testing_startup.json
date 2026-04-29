@@ -1,0 +1,193 @@
+{
+  "checklist_type": "4_ep6_final_testing_startup",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "EP6-Final Testing  (2)",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "source_workbook": "4. EP6 FINAL TESTING STARTUP.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean fixtures ,Tool & Working area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the PM status of running model tool/fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Wear personal protective equipments(PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Machine valiadation by master sample",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Master Sample Condition (Calibration Sticker)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "Final Testing Machine Validation For OK & Not OK",
+          "specified_value": "For Master NOT OK Part- Put master NOT OK sample on fixture and start the cycle. For NOT OK component barcode should not come.\nFor Master OK Part- Put master OK sample on fixture and start the cycle. For OK component barcode should come, and  paste this barcode back side of FPA report. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Cooling Module Assy Barcode Scanning",
+          "specified_value": "For NOT OK Condition : Cycle will not start if Cooling Module Assy Barcode not scanned by Scanner. \nFor OK Condition : Cycle will start if Cooling Module Assy Barcode scanned by Scanner. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Flow sensor checking",
+          "specified_value": "For NOT OK Condition : Put Not Ok Master sample on Fixture and start the cycle Flow sensor will not Activated if Fanwheel Rotation Clockwise direction and cycle will shown not ok and barcode will not generate . \nFor OK Condition :Put Ok Master sample on Fixture and start the cycle Flow sensor will Activated if Fanwheel Rotation Anti- Clockwise direction and cycle will shown ok and barcode will generate. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :",
+      "items": [
+        {
+          "id": "activity_13",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean Fixtures ,Tool & Working area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "2",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS : - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_15",
+          "serial_no": "3",
+          "item": "",
+          "question": "Final Testing Machine Validation For OK & Not OK",
+          "specified_value": "For Master NOT OK Part- Put master NOT OK sample on fixture and start the cycle. For NOT OK component barcode should not come.\nFor Master OK Part- Put master OK sample on fixture and start the cycle. For OK component barcode should come, and  paste this barcode back side of FPA report. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "4",
+          "item": "",
+          "question": "Cooling Module Assy Barcode Scanning",
+          "specified_value": "For NOT OK Condition : Cycle will not start if Cooling Module Assy Barcode not scanned by Scanner. \nFor OK Condition : Cycle will start if Cooling Module Assy Barcode scanned by Scanner. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_17",
+          "serial_no": "5",
+          "item": "",
+          "question": "Flow sensor checking",
+          "specified_value": "For NOT OK Condition : Put Not Ok Master sample on Fixture and start the cycle Flow sensor will not Activated if Fanwheel Rotation Clockwise direction and cycle will shown not ok and barcode will not generate . \nFor OK Condition :Put Ok Master sample on Fixture and start the cycle Flow sensor will Activated if Fanwheel Rotation Anti- Clockwise direction and cycle will shown ok and barcode will generate. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

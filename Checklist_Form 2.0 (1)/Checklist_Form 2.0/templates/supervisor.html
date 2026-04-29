@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAHLE — Review Queue</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #1a2940; min-height: 100vh; }
+  .topnav { background: #0d2a4a; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; position: sticky; top: 0; z-index: 50; }
+  .nav-brand { display: flex; align-items: baseline; gap: 10px; }
+  .nav-brand .logo { color: #fff; font-size: 1.1rem; font-weight: 800; letter-spacing: 0.08em; }
+  .nav-brand .tagline { color: rgba(255,255,255,0.5); font-size: 0.78rem; }
+  .nav-right { display: flex; align-items: center; gap: 18px; }
+  .user-chip { display: flex; align-items: center; gap: 10px; color: #fff; }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+  .user-name { font-size: 0.875rem; font-weight: 600; }
+  .user-role { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+  .btn-signout { display: flex; align-items: center; gap: 6px; background: transparent; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 500; cursor: pointer; font-family: inherit; }
+  .shell { display: flex; min-height: calc(100vh - 56px); }
+  .sidebar { width: 220px; background: #fff; border-right: 1px solid #dde4ee; padding: 20px 0; flex-shrink: 0; }
+  .sidebar-nav { list-style: none; }
+  .sidebar-nav li a { display: flex; align-items: center; gap: 10px; padding: 11px 22px; color: #5a6e87; text-decoration: none; font-size: 0.875rem; font-weight: 500; border-left: 3px solid transparent; transition: all 0.15s; }
+  .sidebar-nav li a.active { color: #1e5fad; border-left-color: #1e5fad; background: #edf3ff; font-weight: 600; }
+  .main { flex: 1; padding: 32px 36px; overflow-x: hidden; }
+  .page-hdr { margin-bottom: 24px; }
+  .page-hdr h1 { font-size: 1.55rem; font-weight: 700; }
+  .page-hdr p { font-size: 0.875rem; color: #5a6e87; margin-top: 4px; }
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-card { background: #fff; border: 1px solid #dde4ee; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  .stat-label { font-size: 0.8rem; color: #5a6e87; margin-bottom: 10px; }
+  .stat-value { font-size: 2.2rem; font-weight: 700; line-height: 1; }
+  .stat-value.orange { color: #d97706; }
+  .stat-value.green  { color: #16a34a; }
+  .stat-value.red    { color: #dc2626; }
+  .toolbar { display: flex; gap: 12px; margin-bottom: 16px; align-items: center; }
+  .search-wrap { position: relative; flex: 1; }
+  .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #5a6e87; width: 15px; height: 15px; }
+  .search-input { width: 100%; padding: 10px 12px 10px 36px; border: 1.5px solid #dde4ee; border-radius: 7px; font-size: 0.875rem; font-family: inherit; background: #fff; color: #1a2940; outline: none; }
+  .search-input:focus { border-color: #1e5fad; }
+  .filter-select { padding: 10px 14px; border: 1.5px solid #dde4ee; border-radius: 7px; font-size: 0.875rem; font-family: inherit; background: #fff; color: #1a2940; outline: none; }
+  .table-wrap { background: #fff; border: 1px solid #dde4ee; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  thead th { background: #f6f8fb; padding: 13px 16px; text-align: left; font-weight: 600; font-size: 0.78rem; color: #5a6e87; border-bottom: 1px solid #dde4ee; text-transform: uppercase; letter-spacing: 0.04em; }
+  tbody td { padding: 15px 16px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #fafbfd; }
+  .checklist-name { font-weight: 600; font-size: 0.875rem; }
+  .checklist-shift { font-size: 0.75rem; color: #5a6e87; margin-top: 3px; }
+  .op-name { font-weight: 500; }
+  .op-id { font-size: 0.75rem; color: #5a6e87; }
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 20px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+  .badge-pending  { background: #fef3c7; color: #b45309; }
+  .badge-approved { background: #dcfce7; color: #15803d; }
+  .badge-rejected { background: #fee2e2; color: #b91c1c; }
+  .btn-review { display: inline-flex; align-items: center; gap: 6px; background: #0d2a4a; color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; cursor: pointer; border: none; font-family: inherit; transition: background 0.15s; text-decoration: none; }
+  .btn-review:hover { background: #1e5fad; }
+  .empty-state { text-align: center; padding: 60px 20px; color: #5a6e87; }
+</style>
+</head>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<body>
+<nav class="topnav">
+  <div class="nav-brand"><span class="logo">MAHLE</span><span class="tagline">Smart Digital Checklists</span></div>
+  <div class="nav-right">
+    <div class="user-chip">
+      <div class="avatar" id="nav-avatar">--</div>
+      <div>
+        <div class="user-name" id="nav-name">Loading...</div>
+        <div class="user-role">Supervisor</div>
+      </div>
+    </div>
+    <button class="btn-signout" onclick="signOut()">↪ Sign Out</button>
+  </div>
+</nav>
+
+<div class="shell">
+  <aside class="sidebar">
+    <ul class="sidebar-nav">
+      <li><a href="#" class="active" onclick="showSection('queue',this)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Review Queue
+      </a></li>
+      <li><a href="http://127.0.0.1:5000/dashboard" target="_blank">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Excel Preview ↗
+      </a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <div class="page-hdr">
+      <h1>Review Queue</h1>
+      <p>Review and approve checklist submissions from operators</p>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="stat-label">Pending Review</div><div class="stat-value orange" id="stat-pending">—</div></div>
+      <div class="stat-card"><div class="stat-label">Total Submissions</div><div class="stat-value green" id="stat-total">—</div></div>
+      <div class="stat-card"><div class="stat-label">Last Updated</div><div class="stat-value" style="font-size:1rem;padding-top:8px;" id="stat-time">—</div></div>
+    </div>
+
+    <div class="toolbar">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="search-input" id="search-input" placeholder="Search by checklist or operator..." oninput="renderTable()">
+      </div>
+      <select class="filter-select" id="filter-shift" onchange="renderTable()">
+        <option value="">All Shifts</option>
+        <option value="A">Shift A</option>
+        <option value="B">Shift B</option>
+        <option value="C">Shift C</option>
+      </select>
+      <button class="btn-review" style="background:#1e5fad;" onclick="loadSubmissions()">↻ Refresh</button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Checklist</th>
+            <th>Operator</th>
+            <th>Batch</th>
+            <th>Shift</th>
+            <th>Submitted</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="submissions-tbody">
+          <tr><td colspan="6" style="text-align:center;padding:30px;color:#5a6e87;">Loading submissions...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+
+<script>
+  const API = 'http://127.0.0.1:5000';
+  let allSubmissions = [];
+
+  // Auth guard
+  const user = JSON.parse(localStorage.getItem('mahle_user') || 'null');
+  if (!user || user.role !== 'Supervisor') window.location.href = 'login.html';
+
+  document.getElementById('nav-name').textContent = user?.name || 'Supervisor';
+  const initials = (user?.name || 'SV').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  document.getElementById('nav-avatar').textContent = initials;
+
+  async function loadSubmissions() {
+    try {
+      const res  = await fetch(`${API}/api/supervisor/pending`, { credentials: 'include' });
+      allSubmissions = await res.json();
+
+      document.getElementById('stat-total').textContent   = allSubmissions.length;
+      document.getElementById('stat-pending').textContent = allSubmissions.length;
+      document.getElementById('stat-time').textContent    = new Date().toLocaleTimeString('en-IN');
+
+      renderTable();
+    } catch (e) {
+      document.getElementById('submissions-tbody').innerHTML =
+        `<tr><td colspan="6" style="text-align:center;padding:30px;color:#dc2626;">Cannot connect to Flask server on port 5000.</td></tr>`;
+    }
+  }
+
+  function renderTable() {
+    const query    = document.getElementById('search-input').value.toLowerCase();
+    const shiftFil = document.getElementById('filter-shift').value;
+
+    const filtered = allSubmissions.filter(s => {
+      const matchQ = !query || s.slug.includes(query) || s.operator.toLowerCase().includes(query) || s.batch.toLowerCase().includes(query);
+      const matchS = !shiftFil || s.shift === shiftFil;
+      return matchQ && matchS;
+    });
+
+    const tbody = document.getElementById('submissions-tbody');
+
+    if (!filtered.length) {
+      tbody.innerHTML = `<tr><td colspan="6"><div class="empty-state">No submissions found.</div></td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = filtered.map(s => `
+      <tr>
+        <td>
+          <div class="checklist-name">${s.slug.replace(/_/g, ' ').toUpperCase()}</div>
+          <div class="checklist-shift">Seq: ${s.sequence}</div>
+        </td>
+        <td>
+          <div class="op-name">${s.operator}</div>
+        </td>
+        <td><span style="font-weight:600;">${s.batch}</span></td>
+        <td><span class="badge badge-pending">Shift ${s.shift}</span></td>
+        <td style="font-size:0.8rem;">${s.time}</td>
+        <td>
+          <a href="${API}/dashboard" target="_blank" class="btn-review">👁 Review in Excel</a>
+        </td>
+      </tr>`).join('');
+  }
+
+  async function signOut() {
+    await fetch(`${API}/api/logout`, { method: 'POST', credentials: 'include' }).catch(() => {});
+    localStorage.removeItem('mahle_user');
+    window.location.href = 'login.html';
+  }
+
+  loadSubmissions();
+  // Auto-refresh every 30 seconds
+  setInterval(loadSubmissions, 30000);
+</script>
+</body>
+</html>

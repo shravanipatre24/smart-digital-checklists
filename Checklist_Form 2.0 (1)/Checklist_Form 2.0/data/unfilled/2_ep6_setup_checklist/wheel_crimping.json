@@ -1,0 +1,264 @@
+{
+  "checklist_type": "wheel_crimping",
+  "category": "2. EP6 SETUP Checklist",
+  "machine_type": "Table 1",
+  "title": "SET UP CHANGE CHECK LIST - EP_06 WHEEL CRIMPING",
+  "source_workbook": "Wheel crimping.xlsx",
+  "metadata": {
+    "date": "",
+    "condition": "",
+    "model_change_from": "",
+    "model_to": "",
+    "shift": ""
+  },
+  "sections": [
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "Preparation",
+          "question": "Check the availability of material as per Material Matrix for Production.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "Prepare & keep ready allenkey set & Trolley",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Ensure the Machine is in MANUAL mode",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check all bolts for Thread and Head Damage. If found NOT OK, replace it.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Refer the Set Up Tool Matrix for next Set up or Model Change.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "ONLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "Remove & Fit",
+          "question": "Keep machine in Manual Mode",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Remove inlet top Epoxy by removing guide pin",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Fit inlet top Epoxy & Insert key. Check whether the Inlet sensor is ON",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Rotate the Top indexer by operating Indexer Enable & press push button",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "Remove outlet top Epoxy by removing guide pin",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Fit outlet top Epoxy & Insert key.Check whether the Outlet sensor is ON",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Remove front punch by lifting the tool",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "13",
+          "item": "",
+          "question": "Remove & Fix front header resting block as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "14",
+          "item": "",
+          "question": "Fix front punch as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "15",
+          "item": "",
+          "question": "Check whether front punch is properly tightened or loose, if loose then tight it.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "16",
+          "item": "",
+          "question": "Remove rear punch",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_17",
+          "serial_no": "17",
+          "item": "",
+          "question": "Remove & Fix rear header resting block as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "18",
+          "item": "",
+          "question": "Fix rear punch as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_19",
+          "serial_no": "19",
+          "item": "",
+          "question": "Check whether rear punch is properly tightened or loose, if loose then tight it.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_20",
+          "serial_no": "20",
+          "item": "Adjust",
+          "question": "Go to HMI Recipe & change the programme as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_21",
+          "serial_no": "21",
+          "item": "",
+          "question": "Put selector key in Auto mode & press the reset button & Move to home, Check the initial condition of the m/c",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_22",
+          "serial_no": "22",
+          "item": "Points to be Verified By CC",
+          "question": "Check selected programme and tools should be as per model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_23",
+          "serial_no": "23",
+          "item": "Insepection",
+          "question": "Clean all removed tools.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_24",
+          "serial_no": "24",
+          "item": "",
+          "question": "Check condition of all removed tools if found ok then put ok tag if found not ok send for correction",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_25",
+          "serial_no": "25",
+          "item": "",
+          "question": "Remove all previous model materials if not required",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_26",
+          "serial_no": "26",
+          "item": "",
+          "question": "Check all bolts for Thread and Head Damage. If found NOT OK, replace it.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_27",
+          "serial_no": "Created By",
+          "item": "",
+          "question": "Rishabh G.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_28",
+          "serial_no": "Approved By",
+          "item": "",
+          "question": "Yogesh B.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "set_up_start_time": "",
+    "set_up_end_time": "",
+    "total_set_up_time": "",
+    "set_up_done_by_oe": "",
+    "set_up_approved_by_cc": "",
+    "set_up_verified_by_setter": "",
+    "set_up_approved_time": ""
+  }
+}

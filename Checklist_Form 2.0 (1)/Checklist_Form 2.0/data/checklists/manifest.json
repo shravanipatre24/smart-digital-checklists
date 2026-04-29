@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "fan_motor_assembly_balancing",
+    "category": "2. EP6 SETUP Checklist",
+    "title": "FAN MOTOR AND BALANCING",
+    "machine_type": "FAN MOTOR AND BALANCING",
+    "source_workbook": "FAN - MOTOR ASSEMBLY & BALANCING.xlsx",
+    "form_path": "/forms/fan_motor_assembly_balancing",
+    "schema_path": "data/checklists/2_ep6_setup_checklist/fan_motor_assembly_balancing.json",
+    "template_path": "data/unfilled/2_ep6_setup_checklist/fan_motor_assembly_balancing.json"
+  },
+  {
+    "slug": "fms",
+    "category": "2. EP6 SETUP Checklist",
+    "title": "FMS",
+    "machine_type": "FMS",
+    "source_workbook": "FMS.xlsx",
+    "form_path": "/forms/fms",
+    "schema_path": "data/checklists/2_ep6_setup_checklist/fms.json",
+    "template_path": "data/unfilled/2_ep6_setup_checklist/fms.json"
+  },
+  {
+    "slug": "leak_testing",
+    "category": "2. EP6 SETUP Checklist",
+    "title": "DLT",
+    "machine_type": "DLT",
+    "source_workbook": "LEAK TESTING.xlsx",
+    "form_path": "/forms/leak_testing",
+    "schema_path": "data/checklists/2_ep6_setup_checklist/leak_testing.json",
+    "template_path": "data/unfilled/2_ep6_setup_checklist/leak_testing.json"
+  },
+  {
+    "slug": "module_assembly_testing",
+    "category": "2. EP6 SETUP Checklist",
+    "title": "ASSY AND TESTING",
+    "machine_type": "ASSY AND TESTING",
+    "source_workbook": "MODULE ASSEMBLY & TESTING.xlsx",
+    "form_path": "/forms/module_assembly_testing",
+    "schema_path": "data/checklists/2_ep6_setup_checklist/module_assembly_testing.json",
+    "template_path": "data/unfilled/2_ep6_setup_checklist/module_assembly_testing.json"
+  },
+  {
+    "slug": "wheel_crimping",
+    "category": "2. EP6 SETUP Checklist",
+    "title": "Table 1",
+    "machine_type": "Table 1",
+    "source_workbook": "Wheel crimping.xlsx",
+    "form_path": "/forms/wheel_crimping",
+    "schema_path": "data/checklists/2_ep6_setup_checklist/wheel_crimping.json",
+    "template_path": "data/unfilled/2_ep6_setup_checklist/wheel_crimping.json"
+  },
+  {
+    "slug": "1_ep6_crimping_startup",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "Ep6 Crimping Camera Poka",
+    "machine_type": "Ep6 Crimping Camera Poka",
+    "source_workbook": "1. EP6 CRIMPING STARTUP.xlsx",
+    "form_path": "/forms/1_ep6_crimping_startup",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/1_ep6_crimping_startup.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/1_ep6_crimping_startup.json"
+  },
+  {
+    "slug": "1b_clinching",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "Altroz Clinching",
+    "machine_type": "Altroz Clinching",
+    "source_workbook": "1B. CLINCHING.xlsx",
+    "form_path": "/forms/1b_clinching",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/1b_clinching.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/1b_clinching.json"
+  },
+  {
+    "slug": "2_dlt",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "Altroz Leak Testing",
+    "machine_type": "Altroz Leak Testing",
+    "source_workbook": "2. DLT.xlsx",
+    "form_path": "/forms/2_dlt",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/2_dlt.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/2_dlt.json"
+  },
+  {
+    "slug": "3_module_assly",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP6 Module Assly-3 (2)",
+    "machine_type": "EP6 Module Assly-3 (2)",
+    "source_workbook": "3. MODULE ASSLY.xlsx",
+    "form_path": "/forms/3_module_assly",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/3_module_assly.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/3_module_assly.json"
+  },
+  {
+    "slug": "4_ep6_final_testing_startup",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP6-Final Testing  (2)",
+    "machine_type": "EP6-Final Testing  (2)",
+    "source_workbook": "4. EP6 FINAL TESTING STARTUP.xlsx",
+    "form_path": "/forms/4_ep6_final_testing_startup",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/4_ep6_final_testing_startup.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/4_ep6_final_testing_startup.json"
+  },
+  {
+    "slug": "5_fan_motor_assembly",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP6 Fan Motor Assembly-3 (2)",
+    "machine_type": "EP6 Fan Motor Assembly-3 (2)",
+    "source_workbook": "5. FAN MOTOR ASSEMBLY.xlsx",
+    "form_path": "/forms/5_fan_motor_assembly",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/5_fan_motor_assembly.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/5_fan_motor_assembly.json"
+  },
+  {
+    "slug": "6_balancing",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP6 Balancing-3 (2)",
+    "machine_type": "EP6 Balancing-3 (2)",
+    "source_workbook": "6. BALANCING.xlsx",
+    "form_path": "/forms/6_balancing",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/6_balancing.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/6_balancing.json"
+  },
+  {
+    "slug": "7_fms",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP6 Shroud Assembly (2)",
+    "machine_type": "EP6 Shroud Assembly (2)",
+    "source_workbook": "7. FMS.xlsx",
+    "form_path": "/forms/7_fms",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/7_fms.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/7_fms.json"
+  },
+  {
+    "slug": "8_ep6_firewall_startup",
+    "category": "3. EP6 START & End of shift checklist",
+    "title": "EP3-Fire wall",
+    "machine_type": "EP3-Fire wall",
+    "source_workbook": "8. EP6 FIREWALL STARTUP.xlsx",
+    "form_path": "/forms/8_ep6_firewall_startup",
+    "schema_path": "data/checklists/3_ep6_start_end_of_shift_checklist/8_ep6_firewall_startup.json",
+    "template_path": "data/unfilled/3_ep6_start_end_of_shift_checklist/8_ep6_firewall_startup.json"
+  }
+]

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAHLE — Login</title>
+  <style>
+    /* Styling */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0a1f3d 0%, #1a4b8c 60%, #1e6bbf 100%);
+      display: flex; align-items: center; justify-content: center; padding: 24px;
+    }
+    .login-box {
+      background: #fff; border-radius: 20px;
+      width: 100%; max-width: 460px;
+      overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+    }
+    .login-hero {
+      background: linear-gradient(135deg, #0d2a4a 0%, #1e5fad 100%);
+      padding: 44px 40px 36px; text-align: center; color: #fff;
+    }
+    .brand { font-size: 2.2rem; font-weight: 800; letter-spacing: 0.1em; }
+    .divider { width: 44px; height: 3px; background: rgba(255,255,255,0.35); margin: 14px auto; border-radius: 2px; }
+    .subtitle { font-size: 1.05rem; font-weight: 600; }
+    .sub2 { font-size: 0.82rem; opacity: 0.65; margin-top: 4px; }
+    .login-body { padding: 32px 40px 24px; }
+    .form-label { display: block; font-size: 0.85rem; font-weight: 600; color: #1a2940; margin-bottom: 8px; }
+    .form-input {
+      width: 100%; padding: 13px 16px;
+      border: 1.5px solid #dde4ee; border-radius: 8px;
+      font-size: 0.9rem; color: #1a2940; background: #f8fafd;
+      outline: none; transition: border-color 0.15s; font-family: inherit;
+    }
+    .form-input:focus { border-color: #1e5fad; background: #fff; }
+    .form-group { margin-bottom: 20px; }
+    .btn-signin {
+      width: 100%; padding: 14px;
+      background: #0d2a4a; color: #fff;
+      border: none; border-radius: 8px;
+      font-size: 0.95rem; font-weight: 700;
+      cursor: pointer; margin-top: 6px;
+      font-family: inherit; transition: background 0.15s;
+    }
+    .btn-signin:hover { background: #1e5fad; }
+    .btn-signin:disabled { opacity: 0.6; cursor: not-allowed; }
+    .register-link {
+      display: block; text-align: center; margin-top: 18px;
+      font-size: 0.83rem; color: #1e5fad; font-weight: 600; text-decoration: none;
+    }
+    .register-link:hover { text-decoration: underline; }
+    .error-msg {
+      background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5;
+      border-radius: 7px; padding: 10px 14px; font-size: 0.83rem;
+      margin-bottom: 16px; display: none;
+    }
+    .demo-section {
+      border-top: 1px solid #eef0f5; padding: 18px 40px 22px; background: #f8fafd;
+    }
+    .demo-label { font-size: 0.75rem; color: #6b7a92; margin-bottom: 10px; }
+    .demo-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .demo-chip {
+      padding: 6px 14px; border: 1px solid #dde4ee;
+      border-radius: 20px; font-size: 0.75rem; background: #fff;
+      cursor: pointer; transition: all 0.15s; color: #1a2940; font-family: inherit;
+    }
+    .demo-chip:hover { border-color: #1e5fad; color: #1e5fad; background: #edf3ff; }
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <div class="login-hero">
+    <div class="brand">MAHLE</div>
+    <div class="divider"></div>
+    <div class="subtitle">Smart Digital Checklists</div>
+    <div class="sub2">Internal Manufacturing Quality System</div>
+  </div>
+
+  <div class="login-body">
+    <div class="error-msg" id="error-msg"></div>
+    
+    <div class="form-group">
+      <label class="form-label">Employee ID</label>
+      <input class="form-input" id="emp-id" type="text" placeholder="Enter your ID">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Password</label>
+      <input class="form-input" id="password" type="password" placeholder="Enter password">
+    </div>
+
+    <button class="btn-signin" id="signin-btn" onclick="doLogin()">Sign In</button>
+    
+    <a href="/register" class="register-link">
+      Don't have an account? Register here →
+    </a>
+  </div>
+
+  <div class="demo-section">
+    <p class="demo-label">Quick fill credentials:</p>
+    <div class="demo-chips">
+      <button class="demo-chip" onclick="fillDemo('OP001','pass123')">Operator: OP001</button>
+      <button class="demo-chip" onclick="fillDemo('SUP001','pass123')">Supervisor: SUP001</button>
+      <button class="demo-chip" onclick="fillDemo('ADM001','pass123')">Admin: ADM001</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Point this to your Flask backend
+  const API = window.location.origin; 
+
+  function fillDemo(id, pw) {
+    document.getElementById('emp-id').value = id;
+    document.getElementById('password').value = pw;
+  }
+
+  function showError(msg) {
+    const el = document.getElementById('error-msg');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+
+  async function doLogin() {
+    const empId    = document.getElementById('emp-id').value.trim();
+    const password = document.getElementById('password').value;
+    const btn      = document.getElementById('signin-btn');
+    const errEl    = document.getElementById('error-msg');
+
+    if (!empId || !password) {
+      showError('Please enter your Employee ID and password.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Signing in...';
+    errEl.style.display = 'none';
+
+    try {
+      const res = await fetch(`${API}/api/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ employee_id: empId, password })
+      });
+      
+      const data = await res.json();
+
+      if (!res.ok) {
+        showError(data.error || 'Login failed.');
+        return;
+      }
+
+      // Success logic
+      localStorage.setItem('mahle_user', JSON.stringify(data));
+      redirectByRole(data.role);
+
+    } catch (e) {
+      showError('Cannot connect to server. Ensure Flask is running.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Sign In';
+    }
+  }
+
+  function redirectByRole(role) {
+    // Redirecting to Flask routes, not .html files
+    if (role === 'Admin') window.location.href = '/admin';
+    else if (role === 'Supervisor') window.location.href = '/supervisor';
+    else window.location.href = '/operator';
+  }
+
+  // Handle "Enter" key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Enter') doLogin();
+  });
+</script>
+
+</body>
+</html>

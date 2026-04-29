@@ -1,0 +1,202 @@
+{
+  "checklist_type": "3_module_assly",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "EP6 Module Assly-3 (2)",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "source_workbook": "3. MODULE ASSLY.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean Fixtures ,Tool & Working Area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine (Cycle : Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the PM status of running model tool/fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Availability of rejection bin/Identification tags ( Red/Yellow/Green)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Wear personal protective equipment's (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Check the air pressure",
+          "specified_value": "5 To 7 BAR",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_10",
+          "serial_no": "1",
+          "item": "",
+          "question": "Module Assembly locking Bolts/screws Gun torque verification. Torque (3.5 to 4.5) NM\n[for S201/S215 GSL/DSL and W153 - 2 Bolts/Altroz Rad-8 Bolts}\nNote : For other models fill Not Applicable (NA)",
+          "specified_value": "For NOT OK Condition : Barcode will not get generated if specified no.of Bolts/Screws are not tightened on Shroud/Assembly with required Torque.  \nFor OK Condition : Barcode will get generated if specified no.of Bolts/Screws are tightened on Shroud/Assembly with required Torque. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "2",
+          "item": "",
+          "question": "Barcode scanning (As per model)",
+          "specified_value": "For NOT OK Condition :Put the part on fixture Press Cycle Start button Gun will not Start if Radiator&Condenser Barcode not scanned by Scanner.(Condenser Barcode-Only for W153/Altroz Rad)\nFor OK Condition :Put the part on fixture Press Cycle Start button Gun will Start if Radiator&Condenser Barcode scanned by Scanner.(Condenser Barcode-Only for W153/Altroz Rad) | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "3",
+          "item": "",
+          "question": "Tank Metal Sleeve & Sealing Foam Presence POKAYOKE (Only for W153)",
+          "specified_value": "Not ok Condition-Put the Without Grommet and Metal Sleeve part on Fixture and Start Cycle Start button Scanning Display not Showing in Scada and Gun will Not Activated\nok Condition-Put the With Grommet and Metal Sleeve part on Fixture and Start Cycle Start button Scanning Display Showing in Scada and After barcode Scanning  Gun will Not Activated and Cycle will Complete | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_13",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean Fixtures ,Tool & Working Area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and record of rejection",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_16",
+          "serial_no": "1",
+          "item": "",
+          "question": "Module Assembly locking Bolts/screws Gun torque verification. Torque (3.5 to 4.5) NM\n[for S201/S215 GSL/DSL and W153 - 2 Bolts, \nALTROZ- 8 Bolts]\nNote : For other models fill Not Applicable (NA)",
+          "specified_value": "For NOT OK Condition : Barcode will not get generated if specified no.of Bolts/Screws are not tightened on Shroud/Assembly with required Torque.  \nFor OK Condition : Barcode will get generated if specified no.of Bolts/Screws are tightened on Shroud/Assembly with required Torque. | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_17",
+          "serial_no": "2",
+          "item": "",
+          "question": "Barcode scanning (As per model)",
+          "specified_value": "For NOT OK Condition :Put the part on fixture Press Cycle Start button Gun will not Start if Radiator&Condenser Barcode not scanned by Scanner.(Condenser Barcode-Only for W153/Altroz Rad)\nFor OK Condition :Put the part on fixture Press Cycle Start button Gun will Start if Radiator&Condenser Barcode scanned by Scanner.(Condenser Barcode-Only for W153/Altroz Rad) | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "3",
+          "item": "",
+          "question": "Tank Metal Sleeve & Sealing Foam Presence POKAYOKE (Only for W153)",
+          "specified_value": "Not ok Condition-Put the Without Grommet and Metal Sleeve part on Fixture and Start Cycle Start button Scanning Display not Showing in Scada and Gun will Not Activated\nok Condition-Put the With Grommet and Metal Sleeve part on Fixture and Start Cycle Start button Scanning Display Showing in Scada and After barcode Scanning  Gun will Not Activated and Cycle will Complete | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

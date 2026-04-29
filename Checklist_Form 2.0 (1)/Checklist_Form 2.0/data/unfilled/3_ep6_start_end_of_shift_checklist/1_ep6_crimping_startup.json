@@ -1,0 +1,238 @@
+{
+  "checklist_type": "1_ep6_crimping_startup",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "Ep6 Crimping Camera Poka",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "source_workbook": "1. EP6 CRIMPING STARTUP.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the die, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply.",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the line air pressure",
+          "specified_value": "5 TO 7 BAR",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Machine Air Pressure",
+          "specified_value": "3 TO 3.5 BAR",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "5",
+          "item": "",
+          "question": "Released a emergency botton",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "6",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine (Cycle:Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "7",
+          "item": "",
+          "question": "Check the PM status of running model tool / fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "8",
+          "item": "",
+          "question": "Availability of rejection bin/ Rework trolley/Identification tags ( Red/Yellow/Green)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "9",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "10",
+          "item": "",
+          "question": "Wear personal protective equipments (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_12",
+          "serial_no": "1",
+          "item": "",
+          "question": "Safety Light Curtain Press Cycle start button of machine, When ram is moving down cut the Light Curtain, Machine has to stop in between.If machine gets stop means POKAYOKE is working, if not inform to maintenance.",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "3",
+          "item": "",
+          "question": "Sealing Frame no fold in Header Put the job inside the machine without checking of the crimping sealing resting by levelling stick  press start button machine will not start Remove the job and check sealing resting by levelling stick and again put the complete assembly job inside of the machine press start button machine will run.",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "4",
+          "item": "",
+          "question": "Part missing (Wheel crimping) Put the job inside the machine without tank assembly and try to start machine, Machine will start but wheel not getting forward and cycle automatically reset at home position. Now put complete assembly with tank inside the machine and try to start the machine, Machine should start and wheel getting move forward and cycle will complete",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "4",
+          "item": "",
+          "question": "Wrong Tank or Orientation of Tank for S201/S215 (Wheel crimping) OK Case - Put the Job with Wrong Orientation or with Wrong Tank and Start the Cycle ,Camera detect the Wrong Tank and Cycle will not Start and Wrong Tank Assembly Alarm Pop Up on Screen.\nNot OK Case - Put the Job with Correct Orientation or with correct Tank and Start the Cycle ,Camera detect the correct Tank and Cycle will Start",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_16",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the die, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_17",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and record of rejection",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_19",
+          "serial_no": "1",
+          "item": "",
+          "question": "Safety Light Curtain Press Cycle start button of machine, When ram is moving down cut the Light Curtain, Machine has to stop in between.If machine gets stop means POKAYOKE is working, if not inform to maintenance.",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_20",
+          "serial_no": "2",
+          "item": "",
+          "question": "Sealing Frame no fold in Header Put the job inside the machine without checking of the crimping sealing resting by levelling stick  press start button machine will not start Remove the job and check sealing resting by levelling stick and again put the complete assembly job inside of the machine press start button machine will run.",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_21",
+          "serial_no": "3",
+          "item": "",
+          "question": "Part missing (Wheel crimping) Put the job inside the machine without tank assembly and try to start machine, Machine will start but wheel not getting forward and cycle automatically reset at home position. Now put complete assembly with tank inside the machine and try to start the machine, Machine should start and wheel getting move forward and cycle will complete",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_22",
+          "serial_no": "4",
+          "item": "",
+          "question": "Wrong Tank or Orientation of Tank For S201/S215 (Wheel crimping) OK Case - Put the Job with Wrong Orientation or with Wrong Tank and Start the Cycle ,Camera detect the Wrong Tank and Cycle will not Start and Wrong Tank Assembly Alarm Pop Up on Screen.\nNot OK Case - Put the Job with Correct Orientation or with correct Tank and Start the Cycle ,Camera detect the correct Tank and Cycle will Start",
+          "specified_value": "OK/NOT OK",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

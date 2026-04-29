@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "date": "2026-04-08",
+    "condition": "01",
+    "model_change_from": "12345",
+    "model_to": "432",
+    "shift": "B"
+  },
+  "summary": {
+    "set_up_start_time": "2026-04-08T11:51",
+    "set_up_end_time": "2026-04-08T11:51",
+    "total_set_up_time": "13",
+    "set_up_done_by": "Hiba"
+  },
+  "saved_at": "4/8/2026, 11:51:45 AM",
+  "sections": [
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_01",
+          "input_type": "select",
+          "item": "Preparation",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Check the availability of material as per Material Matrix for Production.",
+          "required": true,
+          "serial_no": "1",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_02",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Refer the Set Up Condition Matrix for next Set up or Model Change.",
+          "required": true,
+          "serial_no": "2",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_03",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Check and arrange allenkey set for next setup change.",
+          "required": true,
+          "serial_no": "3",
+          "value": "NOT OK"
+        }
+      ]
+    },
+    {
+      "title": "ON LINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_04",
+          "input_type": "select",
+          "item": "Remove",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Remove the air connectors from the fixture",
+          "required": true,
+          "serial_no": "4",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_05",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Remove the Electic connectors from the fixture",
+          "required": true,
+          "serial_no": "5",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_06",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Remove the fixture",
+          "required": true,
+          "serial_no": "6",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_07",
+          "input_type": "select",
+          "item": "Fit",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Keep the fixture",
+          "required": true,
+          "serial_no": "7",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_08",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Connect the air connectors to fixture",
+          "required": true,
+          "serial_no": "8",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_09",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Connect the Electic connectors to fixture (Single or both)",
+          "required": true,
+          "serial_no": "9",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_10",
+          "input_type": "select",
+          "item": "Check",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Check the air connectors is properly locked",
+          "required": true,
+          "serial_no": "10",
+          "value": "OK"
+        }
+      ]
+    },
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_11",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Check condition of all removed tools if found ok then put ok tag if found not ok send for correction",
+          "required": true,
+          "serial_no": "11",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_12",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Remove all previous model materials if not required",
+          "required": true,
+          "serial_no": "12",
+          "value": "OK"
+        },
+        {
+          "answer_type": "OK/NOT OK",
+          "id": "activity_13",
+          "input_type": "select",
+          "item": "",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "question": "Produce & fill the First Piece.",
+          "required": true,
+          "serial_no": "13",
+          "value": "OK"
+        }
+      ]
+    }
+  ]
+}

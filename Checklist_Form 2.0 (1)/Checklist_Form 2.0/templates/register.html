@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAHLE — Register</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #1a2940; min-height: 100vh; }
+  .topbar { background: #0d2a4a; height: 58px; display: flex; align-items: center; justify-content: space-between; padding: 0 32px; }
+  .topbar-brand .logo { color: #fff; font-size: 1.15rem; font-weight: 800; letter-spacing: 0.08em; }
+  .topbar-brand .tagline { color: rgba(255,255,255,0.5); font-size: 0.75rem; }
+  .btn-back { display: inline-flex; align-items: center; gap: 6px; background: transparent; border: 1px solid rgba(255,255,255,0.3); color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 0.82rem; font-weight: 500; cursor: pointer; text-decoration: none; font-family: inherit; }
+  .btn-back:hover { background: rgba(255,255,255,0.1); }
+  .page-body { max-width: 920px; margin: 0 auto; padding: 36px 24px 60px; }
+  .page-body h1 { font-size: 1.5rem; font-weight: 700; }
+  .page-subtitle { font-size: 0.875rem; color: #5a6e87; margin-top: 4px; margin-bottom: 28px; }
+  .section-card { background: #fff; border: 1px solid #dde4ee; border-radius: 12px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .section-title { font-size: 1rem; font-weight: 700; color: #1a2940; padding-left: 14px; border-left: 4px solid #1e5fad; margin-bottom: 24px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .form-group { margin-bottom: 20px; }
+  .form-label { display: block; font-size: 0.85rem; font-weight: 600; color: #1a2940; margin-bottom: 8px; }
+  .form-input, .form-select { width: 100%; padding: 11px 14px; border: 1.5px solid #dde4ee; border-radius: 7px; font-size: 0.9rem; color: #1a2940; background: #fff; outline: none; font-family: inherit; transition: border-color 0.15s; }
+  .form-input:focus, .form-select:focus { border-color: #1e5fad; }
+  .assign-group-title { font-size: 0.875rem; font-weight: 700; color: #1a2940; margin-bottom: 12px; margin-top: 8px; }
+  .assign-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-bottom: 22px; }
+  .assign-item { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border: 1.5px solid #dde4ee; border-radius: 7px; cursor: pointer; transition: all 0.15s; font-size: 0.83rem; font-weight: 500; background: #fff; }
+  .assign-item:hover { border-color: #1e5fad; background: #f0f5ff; }
+  .assign-item:has(input:checked) { border-color: #1e5fad; background: #edf3ff; color: #1e5fad; }
+  .assign-item input[type=checkbox] { accent-color: #1e5fad; width: 15px; height: 15px; flex-shrink: 0; }
+  .actions { display: flex; align-items: center; gap: 14px; margin-top: 8px; }
+  .btn-create { background: #0d2a4a; color: #fff; padding: 12px 36px; border: none; border-radius: 7px; font-size: 0.9rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.15s; }
+  .btn-create:hover { background: #1e5fad; }
+  .btn-create:disabled { opacity: 0.6; cursor: not-allowed; }
+  .btn-cancel { font-size: 0.85rem; color: #5a6e87; text-decoration: none; }
+  .error-msg { background: #fee2e2; color: #b91c1c; border: 1px solid #fca5a5; border-radius: 7px; padding: 10px 14px; font-size: 0.83rem; margin-bottom: 16px; display: none; }
+  .success-msg { background: #dcfce7; color: #15803d; border: 1px solid #86efac; border-radius: 7px; padding: 10px 14px; font-size: 0.83rem; margin-bottom: 16px; display: none; }
+</style>
+</head>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<body>
+<div class="topbar">
+  <div class="topbar-brand">
+    <div class="logo">MAHLE</div>
+    <div class="tagline">Smart Digital Checklists</div>
+  </div>
+  <a href="/login" class="btn-back">← Back to Login</a>
+</div>
+
+<div class="page-body">
+  <h1>Register New Account</h1>
+  <p class="page-subtitle">Create access credentials for the digital checklist system</p>
+
+  <div class="error-msg" id="error-msg"></div>
+  <div class="success-msg" id="success-msg"></div>
+
+  <div class="section-card">
+    <div class="section-title">Account Information</div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input class="form-input" id="name" type="text" placeholder="e.g., Rajesh Kumar">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Employee ID</label>
+        <input class="form-input" id="emp-id" type="text" placeholder="e.g., OP001">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input class="form-input" id="password" type="password" placeholder="Create a secure password">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Role</label>
+        <select class="form-select" id="role">
+          <option value="Operator">Operator</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Admin">Admin</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <div class="section-title">Checklist Assignment</div>
+    <p style="font-size:0.83rem;color:#5a6e87;margin-bottom:20px;">Select the checklists this operator will be responsible for</p>
+
+    <div class="assign-group-title">Clinching</div>
+    <div class="assign-grid">
+      <label class="assign-item"><input type="checkbox" value="1_ep6_crimping_startup"> EP6 Crimping Startup</label>
+      <label class="assign-item"><input type="checkbox" value="1b_clinching"> Altroz Clinching</label>
+      <label class="assign-item"><input type="checkbox" value="2_dlt"> Altroz Leak Testing (DLT)</label>
+      <label class="assign-item"><input type="checkbox" value="3_module_assly"> Module Assembly</label>
+      <label class="assign-item"><input type="checkbox" value="4_ep6_final_testing_startup"> Final Testing</label>
+      <label class="assign-item"><input type="checkbox" value="5_fan_motor_assembly"> Fan Motor Assembly</label>
+      <label class="assign-item"><input type="checkbox" value="6_balancing"> Balancing</label>
+      <label class="assign-item"><input type="checkbox" value="7_fms"> FMS (Fan Motor Shroud)</label>
+      <label class="assign-item"><input type="checkbox" value="8_ep6_firewall_startup"> Firewall Startup</label>
+    </div>
+
+    <div class="assign-group-title">Setup Checklist</div>
+    <div class="assign-grid">
+      <label class="assign-item"><input type="checkbox" value="fan_motor_assembly_balancing"> Fan Motor Assembly &amp; Balancing</label>
+      <label class="assign-item"><input type="checkbox" value="fms"> FMS (Setup)</label>
+      <label class="assign-item"><input type="checkbox" value="leak_testing"> Leak Testing (Setup)</label>
+      <label class="assign-item"><input type="checkbox" value="module_assembly_testing"> Module Assembly &amp; Testing</label>
+      <label class="assign-item"><input type="checkbox" value="wheel_crimping"> Wheel Crimping (Setup)</label>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn-create" id="create-btn" onclick="doRegister()">Create Account</button>
+    <a href="/login" class="btn-cancel">Cancel</a>
+  </div>
+</div>
+
+<script>
+  const API = window.location.origin;
+
+  async function doRegister() {
+    const name     = document.getElementById('name').value.trim();
+    const empId    = document.getElementById('emp-id').value.trim();
+    const password = document.getElementById('password').value;
+    const role     = document.getElementById('role').value;
+    const btn      = document.getElementById('create-btn');
+
+    // Collect checked slugs
+    const checked = [...document.querySelectorAll('input[type=checkbox]:checked')];
+    const assigned_checklists = checked.map(c => c.value);
+
+    hideMessages();
+
+    if (!name || !empId || !password) {
+      showError('Please fill in all account fields.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Creating...';
+
+    try {
+      const res  = await fetch(`${API}/api/register`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        body: JSON.stringify({ name, employee_id: empId, password, role, assigned_checklists })
+      });
+      const data = await res.json();
+
+      if (!res.ok) {
+        showError(data.error || 'Registration failed.');
+        return;
+      }
+
+      showSuccess('Account created! Redirecting to login...');
+      setTimeout(() => window.location.href = '/login', 1800);
+
+    } catch (e) {
+      showError('Cannot connect to server. Make sure Flask is running on port 5000.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Create Account';
+    }
+  }
+
+  function showError(msg) {
+    const el = document.getElementById('error-msg');
+    el.textContent = msg; el.style.display = 'block';
+  }
+  function showSuccess(msg) {
+    const el = document.getElementById('success-msg');
+    el.textContent = msg; el.style.display = 'block';
+  }
+  function hideMessages() {
+    document.getElementById('error-msg').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'none';
+  }
+</script>
+</body>
+</html>

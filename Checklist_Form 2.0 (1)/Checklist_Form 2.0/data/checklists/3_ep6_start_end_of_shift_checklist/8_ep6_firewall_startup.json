@@ -1,0 +1,241 @@
+{
+  "slug": "8_ep6_firewall_startup",
+  "title": "Form:-  Start UP & END of Shift Checklist",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "EP3-Fire wall",
+  "source_workbook": "8. EP6 FIREWALL STARTUP.xlsx",
+  "source_sheet": "EP3-Fire wall",
+  "metadata_fields": [
+    {
+      "id": "shift",
+      "label": "Shift",
+      "answer_type": "A/B/C",
+      "input_type": "select",
+      "required": true,
+      "options": [
+        "",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "condition",
+      "label": "Condition",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "answer_type": "Date",
+      "input_type": "date",
+      "required": true
+    }
+  ],
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean Fixtures ,Tool & working Area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on Power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "input_type": "select",
+          "options": [
+            "",
+            "ON",
+            "OFF"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the availability of scanner & fire wall sticker",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the PM status of running model tool/fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Check the Alarm working condition",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Wear personal protective equipments (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "input_type": "select",
+          "options": [
+            "",
+            "DONE",
+            "NOT DONE"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Calibration of Instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_09",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean Fixtures ,Tool & working Area",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "2",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "input_type": "select",
+          "options": [
+            "",
+            "ON",
+            "OFF"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ],
+  "closing_fields": [
+    {
+      "id": "summary_shift_start_up_check_list_name_sign_of_person_attending",
+      "label": "SHIFT START UP CHECK LIST :- - NAME & SIGN OF PERSON ATTENDING",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator",
+      "label": "SHIFT START UP CHECK LIST :- - NAME & SIGN OF APPROVING CELL COORDINATOR",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_end_of_shift_check_points_name_sign_of_person_attending",
+      "label": "END OF SHIFT CHECK POINTS :- - NAME & SIGN OF PERSON ATTENDING",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator",
+      "label": "END OF SHIFT CHECK POINTS :- - NAME & SIGN OF APPROVING CELL COORDINATOR",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    }
+  ],
+  "notes": [
+    [
+      "NAME OF MACHINE/STATION:- Radiator Assembly Cell 4-Firewall"
+    ],
+    [
+      "Form:- Start UP & END of Shift Checklist",
+      "EP-Assembly line"
+    ],
+    [
+      "A)Condition for StartUp :-\n1] At Start of shift /End of shift\n2] Model &/or Set up change\n3] Pokayoke Failure, corrected & production resumed\n4] If poka yoke bypassed and production continued as per alternate poka yoke bypass document\n5] More than 4 hour Planned shut down\n6) During Abnormal Situations (6a-Emergency Alarm / 6b-Power Failure / 6c-Machine or Tool Breakdown - more than 45 mins / 6d-Inspection Guage or Instrument breakdown or fallen down)\nB)Reactivity Rule:- If any NC is found inform to CC/ Shift Incharge , Initiate actions for correction & After closure of NC treat the shift as a fresh shift , Start checking from the begining of the check points in the next column."
+    ]
+  ]
+}

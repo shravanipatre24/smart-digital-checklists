@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Module Assembly & Testing{% endblock %}
+{% block content %}
+<main class="form-page" data-checklist-slug="{{ checklist_slug }}">
+  <a class="back-link" href="{{ url_for('index') }}">Back to checklist selection</a>
+  <div id="checklist-app"></div>
+</main>
+<script>
+  window.CHECKLIST_SLUG = "{{ checklist_slug }}";
+</script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock %}

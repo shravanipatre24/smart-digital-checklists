@@ -1,0 +1,229 @@
+{
+  "checklist_type": "2_dlt",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "Altroz Leak Testing",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "source_workbook": "2. DLT.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the leak testing machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the line air pressure",
+          "specified_value": "5 TO 7 BAR",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the calibration status of leak testing machine.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Switch on the vaccum pump",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine (Cycle : Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Check the running model tool / fixture condition & PM status. (Should be within due date mentioned)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Availability of rejection bin/Rework trolley/Identification tags ( Red/Yellow/Green)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Wear personal protective equipments (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Check the master of OK /NOT OK masters for M/C validation leak testing 1&2",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "13",
+          "item": "",
+          "question": "Test pressure pipe condition. \n(Ensure no pneumatic pipe block/pinch)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "14",
+          "item": "",
+          "question": "Master Ok/ not ok sample condition.\n(Ensure use of validated sample should be within due dates mentions.)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "15",
+          "item": "",
+          "question": "Leak rate/Leak Testing Validation For OK & NOT OK",
+          "specified_value": "For Master OK Part- Put master OK sample on leak testing  fixture and do leak testing. For OK component GREEN SPRAY & Barcode should come.\nFor Master NOT OK Part- Put master NOT OK sample on leak testing fixture and do leak testing. For NOT OK component SPRAY & Barcode should not come. | LH side OK/NOK | RH side OK/NOK | OK / NOT OK | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_16",
+          "serial_no": "1",
+          "item": "",
+          "question": "Drain Plug Tightning Torque",
+          "specified_value": "OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Require torque by Electric Gun till Auto shut off Again Press Cycle Start Button then cycle will start\nNOT OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Half torque by Electric Gun before Auto shut off Again Press Cycle Start Button then cycle will not start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_17",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the leak testing machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and record of rejection",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_19",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_20",
+          "serial_no": "4",
+          "item": "",
+          "question": "Leak Testing Validation For OK & NOT OK",
+          "specified_value": "For Master OK Part- Put master OK sample on leak testing  fixture and do leak testing. For OK component GREEN SPRAY & Barcode should come.\nFor Master NOT OK Part- Put master NOT OK sample on leak testing fixture and do leak testing. For NOT OK component SPRAY & Barcode should not come. | LH side OK/NOK | RH side OK/NOK | OK / NOT OK | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_21",
+          "serial_no": "1",
+          "item": "",
+          "question": "Drain Plug Tightning Torque",
+          "specified_value": "OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Require torque by Electric Gun till Auto shut off Again Press Cycle Start Button then cycle will start\nNOT OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Half torque by Electric Gun before Auto shut off Again Press Cycle Start Button then cycle will not start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

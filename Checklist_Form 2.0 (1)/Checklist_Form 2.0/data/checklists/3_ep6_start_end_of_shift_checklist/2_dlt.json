@@ -1,0 +1,412 @@
+{
+  "slug": "2_dlt",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "Altroz Leak Testing",
+  "source_workbook": "2. DLT.xlsx",
+  "source_sheet": "Altroz Leak Testing",
+  "metadata_fields": [
+    {
+      "id": "shift",
+      "label": "Shift",
+      "answer_type": "A/B/C",
+      "input_type": "select",
+      "required": true,
+      "options": [
+        "",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "condition",
+      "label": "Condition",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "answer_type": "Date",
+      "input_type": "date",
+      "required": true
+    }
+  ],
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the leak testing machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch on power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "input_type": "select",
+          "options": [
+            "",
+            "ON",
+            "OFF"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the line air pressure",
+          "specified_value": "5 TO 7 BAR",
+          "answer_type": "Text",
+          "input_type": "text",
+          "options": [],
+          "required": true
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the calibration status of leak testing machine.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Switch on the vaccum pump",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "input_type": "select",
+          "options": [
+            "",
+            "ON",
+            "OFF"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine (Cycle : Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Check the running model tool / fixture condition & PM status. (Should be within due date mentioned)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "input_type": "select",
+          "options": [
+            "",
+            "DONE",
+            "NOT DONE"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "Availability of rejection bin/Rework trolley/Identification tags ( Red/Yellow/Green)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "Calibration of instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Wear personal protective equipments (PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "input_type": "select",
+          "options": [
+            "",
+            "DONE",
+            "NOT DONE"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Check the master of OK /NOT OK masters for M/C validation leak testing 1&2",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "13",
+          "item": "",
+          "question": "Test pressure pipe condition. \n(Ensure no pneumatic pipe block/pinch)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "14",
+          "item": "",
+          "question": "Master Ok/ not ok sample condition.\n(Ensure use of validated sample should be within due dates mentions.)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "15",
+          "item": "",
+          "question": "Leak rate/Leak Testing Validation For OK & NOT OK",
+          "specified_value": "For Master OK Part- Put master OK sample on leak testing  fixture and do leak testing. For OK component GREEN SPRAY & Barcode should come.\nFor Master NOT OK Part- Put master NOT OK sample on leak testing fixture and do leak testing. For NOT OK component SPRAY & Barcode should not come. | LH side OK/NOK | RH side OK/NOK | OK / NOT OK | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_16",
+          "serial_no": "1",
+          "item": "",
+          "question": "Drain Plug Tightning Torque",
+          "specified_value": "OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Require torque by Electric Gun till Auto shut off Again Press Cycle Start Button then cycle will start\nNOT OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Half torque by Electric Gun before Auto shut off Again Press Cycle Start Button then cycle will not start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :-",
+      "items": [
+        {
+          "id": "activity_17",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the leak testing machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_18",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and record of rejection",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "input_type": "select",
+          "options": [
+            "",
+            "YES",
+            "NO"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_19",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "input_type": "select",
+          "options": [
+            "",
+            "ON",
+            "OFF"
+          ],
+          "required": true
+        },
+        {
+          "id": "activity_20",
+          "serial_no": "4",
+          "item": "",
+          "question": "Leak Testing Validation For OK & NOT OK",
+          "specified_value": "For Master OK Part- Put master OK sample on leak testing  fixture and do leak testing. For OK component GREEN SPRAY & Barcode should come.\nFor Master NOT OK Part- Put master NOT OK sample on leak testing fixture and do leak testing. For NOT OK component SPRAY & Barcode should not come. | LH side OK/NOK | RH side OK/NOK | OK / NOT OK | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_21",
+          "serial_no": "1",
+          "item": "",
+          "question": "Drain Plug Tightning Torque",
+          "specified_value": "OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Require torque by Electric Gun till Auto shut off Again Press Cycle Start Button then cycle will start\nNOT OK Condition-Put the part on Leak Testing Fixture and Press Cycle Start Button and Tight Drain Plug with Half torque by Electric Gun before Auto shut off Again Press Cycle Start Button then cycle will not start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "input_type": "select",
+          "options": [
+            "",
+            "OK",
+            "NOT OK"
+          ],
+          "required": true
+        }
+      ]
+    }
+  ],
+  "closing_fields": [
+    {
+      "id": "summary_shift_start_up_check_list_name_sign_of_person_attending",
+      "label": "SHIFT START UP CHECK LIST :- - NAME & SIGN OF PERSON ATTENDING",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator",
+      "label": "SHIFT START UP CHECK LIST :- - NAME & SIGN OF APPROVING CELL COORDINATOR",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_end_of_shift_check_points_name_sign_of_person_attending",
+      "label": "END OF SHIFT CHECK POINTS :- - NAME & SIGN OF PERSON ATTENDING",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    },
+    {
+      "id": "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator",
+      "label": "END OF SHIFT CHECK POINTS :- - NAME & SIGN OF APPROVING CELL COORDINATOR",
+      "answer_type": "Text",
+      "input_type": "text",
+      "required": true
+    }
+  ],
+  "notes": [
+    [
+      "NAME OF MACHINE/STATION:- Altroz Leak Testing"
+    ],
+    [
+      "FORM:- START UP & END OF SHIFT CHECKLIST",
+      "EP-Assembly line"
+    ],
+    [
+      "A)Condition for StartUp :-\n1] At Start of shift /End of shift\n2] Model &/or Set up change\n3] Pokayoke Failure, corrected & production resumed\n4] If poka yoke bypassed and production continued as per alternate poka yoke bypass document\n5] More than 4 hour Planned shut down\n6) During Abnormal Situations (6a-Emergency Alarm / 6b-Power Failure /\n 6c-Machine or Tool Breakdown - more than 45 mins /\n 6d-Inspection Guage or Instrument breakdown or fallen down)\nB)Reactivity Rule:- If any NC is found inform to CC/ Shift Incharge , Initiate actions for correction & After closure of NC treat the shift as a fresh shift , Start checking from the begining of the check points in the next column.\nC) Guideline for Supervisor's Approval: Supervisor need to do tick mark ( \u221a ) after verification of highlighted points."
+    ]
+  ]
+}

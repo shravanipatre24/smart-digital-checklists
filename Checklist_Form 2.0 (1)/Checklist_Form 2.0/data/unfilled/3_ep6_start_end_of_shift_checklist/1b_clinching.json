@@ -1,0 +1,247 @@
+{
+  "checklist_type": "1b_clinching",
+  "category": "3. EP6 START & End of shift checklist",
+  "machine_type": "Altroz Clinching",
+  "title": "FORM:-  START UP & END OF SHIFT CHECKLIST",
+  "source_workbook": "1B. CLINCHING.xlsx",
+  "metadata": {
+    "shift": "",
+    "condition": "",
+    "date": ""
+  },
+  "sections": [
+    {
+      "title": "SHIFT START UP CHECK LIST :-",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the clinching machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "OE Deploy as per skill matrix",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Wear personal protective  equipment(PPE)",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Switch on power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        },
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "",
+          "question": "Check the line air pressure",
+          "specified_value": "5-7 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Main hydraulic pressure",
+          "specified_value": "50-100 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "",
+          "question": "Top tank pressure (Inlet Tank)",
+          "specified_value": "50-70 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Top tank pressure (Outlet Tank)",
+          "specified_value": "50-70 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "",
+          "question": "L/R Clinch pressure",
+          "specified_value": "50-70 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "10",
+          "item": "",
+          "question": "End  Clinch Pressure",
+          "specified_value": "40-55 Bar",
+          "answer_type": "Text",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "11",
+          "item": "",
+          "question": "Check the PM status of running model tool/fixture (Should be within due date mentioned)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "12",
+          "item": "",
+          "question": "Availability of rejection bin/rework trolley/ identification tag( Red,Yellow, Green)",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_13",
+          "serial_no": "13",
+          "item": "",
+          "question": "Calibration of Instruments",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "14",
+          "item": "",
+          "question": "Check PM status of Workstation/Machine (Cycle : Monthly)",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "SHIFT START UP CHECK LIST :- - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_15",
+          "serial_no": "1",
+          "item": "",
+          "question": "Part missing Put the job inside the machine without tank assembly and try to start machine, Machine will not start. Now put complete assembly with tank inside the machine and try to start the machine, Machine should start.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "2",
+          "item": "",
+          "question": "Sealing Frame No Fold In Header",
+          "specified_value": "Not ok  Condition-Put the job inside the machine without checking of the sealing resting by levelling stick  press start button machine will not start \nok  Condition-Put the job inside the machine After checking of the sealing resting by levelling stick  press start button machine start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_17",
+          "serial_no": "3",
+          "item": "",
+          "question": "Safety Light Curtain Press Cycle start button of machine, When ram is moving down cut the Light Curtain by Dummy, Machine has to stop in between.If machine gets stop means POKAYOKE is working, if not inform to maintenance.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS : -",
+      "items": [
+        {
+          "id": "activity_18",
+          "serial_no": "1",
+          "item": "",
+          "question": "Clean inside and outside the clinching machine, Tool & Working area, oil spillage.",
+          "specified_value": "YES/NO",
+          "answer_type": "YES/NO",
+          "value": ""
+        },
+        {
+          "id": "activity_19",
+          "serial_no": "2",
+          "item": "",
+          "question": "Removal and Record of rejection",
+          "specified_value": "DONE / NOT DONE",
+          "answer_type": "DONE / NOT DONE",
+          "value": ""
+        },
+        {
+          "id": "activity_20",
+          "serial_no": "3",
+          "item": "",
+          "question": "Switch off power supply",
+          "specified_value": "ON/OFF",
+          "answer_type": "ON/OFF",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "END OF SHIFT CHECK POINTS : - - Poka Yoke Validation",
+      "items": [
+        {
+          "id": "activity_21",
+          "serial_no": "1",
+          "item": "",
+          "question": "Part missing Put the job inside the machine without tank assembly and try to start machine, Machine will not start. Now put complete assembly with tank inside the machine and try to start the machine, Machine should start.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_22",
+          "serial_no": "2",
+          "item": "",
+          "question": "Sealing Frame No Fold In Header",
+          "specified_value": "Not ok  Condition-Put the job inside the machine without checking of the sealing resting by levelling stick  press start button machine will not start \nok  Condition-Put the job inside the machine After checking of the sealing resting by levelling stick  press start button machine start | OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_23",
+          "serial_no": "3",
+          "item": "",
+          "question": "Safety Light Curtain Press Cycle start button of machine, When ram is moving down cut the Light Curtain by Dummy, Machine has to stop in between.If machine gets stop means POKAYOKE is working, if not inform to maintenance.",
+          "specified_value": "OK / NOT OK",
+          "answer_type": "OK / NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "summary_shift_start_up_check_list_name_sign_of_person_attending": "",
+    "summary_shift_start_up_check_list_name_sign_of_approving_cell_coordinator": "",
+    "summary_end_of_shift_check_points_name_sign_of_person_attending": "",
+    "summary_end_of_shift_check_points_name_sign_of_approving_cell_coordinator": ""
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAHLE — Operator Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #1a2940; min-height: 100vh; }
+  .topnav { background: #0d2a4a; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 28px; position: sticky; top: 0; z-index: 50; }
+  .nav-brand { display: flex; align-items: baseline; gap: 10px; }
+  .nav-brand .logo { color: #fff; font-size: 1.1rem; font-weight: 800; letter-spacing: 0.08em; }
+  .nav-brand .tagline { color: rgba(255,255,255,0.5); font-size: 0.78rem; }
+  .nav-right { display: flex; align-items: center; gap: 18px; }
+  .user-chip { display: flex; align-items: center; gap: 10px; color: #fff; }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+  .user-name { font-size: 0.875rem; font-weight: 600; }
+  .user-role { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
+  .btn-signout { display: flex; align-items: center; gap: 6px; background: transparent; border: 1px solid rgba(255,255,255,0.25); color: #fff; padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 500; cursor: pointer; font-family: inherit; }
+  .app-shell { display: flex; min-height: calc(100vh - 56px); }
+  .sidebar { width: 220px; background: #fff; border-right: 1px solid #dde4ee; padding: 20px 0; flex-shrink: 0; }
+  .sidebar-nav { list-style: none; }
+  .sidebar-nav li a { display: flex; align-items: center; gap: 10px; padding: 11px 22px; color: #5a6e87; text-decoration: none; font-size: 0.875rem; font-weight: 500; border-left: 3px solid transparent; transition: all 0.15s; }
+  .sidebar-nav li a.active { color: #1e5fad; border-left-color: #1e5fad; background: #edf3ff; font-weight: 600; }
+  .main { flex: 1; padding: 32px 36px; }
+  .page-hdr h1 { font-size: 1.55rem; font-weight: 700; }
+  .page-hdr p { font-size: 0.875rem; color: #5a6e87; margin-top: 4px; }
+  .section-group { margin-top: 30px; }
+  .group-title { font-size: 1.05rem; font-weight: 700; color: #1a2940; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #dde4ee; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 16px; }
+  .checklist-card { background: #fff; border: 1px solid #dde4ee; border-radius: 12px; padding: 22px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); transition: box-shadow 0.15s, border-color 0.15s; }
+  .checklist-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.08); border-color: #b8cce4; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; }
+  .card-top h3 { font-size: 1rem; font-weight: 700; line-height: 1.3; max-width: 240px; }
+  .card-machine { font-size: 0.78rem; color: #5a6e87; margin-top: 3px; }
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border-radius: 20px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
+  .badge-pending { background: #fef3c7; color: #b45309; }
+  .card-meta { display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px; }
+  .meta-row { display: flex; justify-content: space-between; font-size: 0.8rem; }
+  .meta-label { color: #5a6e87; }
+  .meta-val { font-weight: 500; }
+  .btn-start { display: block; width: 100%; padding: 11px; background: #0d2a4a; color: #fff; text-align: center; border: none; border-radius: 7px; font-size: 0.875rem; font-weight: 700; cursor: pointer; font-family: inherit; text-decoration: none; transition: background 0.15s; }
+  .btn-start:hover { background: #1e5fad; }
+  .empty-state { text-align: center; padding: 60px 20px; color: #5a6e87; }
+  .empty-state h3 { font-size: 1.1rem; margin-bottom: 8px; color: #1a2940; }
+  .loading { text-align: center; padding: 40px; color: #5a6e87; font-size: 0.9rem; }
+</style>
+</head>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<body>
+<nav class="topnav">
+  <div class="nav-brand">
+    <span class="logo">MAHLE</span>
+    <span class="tagline">Smart Digital Checklists</span>
+  </div>
+  <div class="nav-right">
+    <div class="user-chip">
+      <div class="avatar" id="nav-avatar">--</div>
+      <div>
+        <div class="user-name" id="nav-name">Loading...</div>
+        <div class="user-role">Operator</div>
+      </div>
+    </div>
+    <button class="btn-signout" onclick="signOut()">↪ Sign Out</button>
+  </div>
+</nav>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <ul class="sidebar-nav">
+      <li><a href="#" class="active">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        Assigned Checklists
+      </a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <div class="page-hdr">
+      <h1>Assigned Checklists</h1>
+      <p>Complete your assigned quality checklists for today's shift</p>
+    </div>
+    <div id="checklists-container">
+      <div class="loading">Loading your checklists...</div>
+    </div>
+  </main>
+</div>
+
+<script>
+  const API = '';  // Use relative URLs instead of absolute
+
+  // Auth guard
+  const user = JSON.parse(localStorage.getItem('mahle_user') || 'null');
+  if (!user) window.location.href = '/login';
+
+  // Set nav info
+  document.getElementById('nav-name').textContent = user?.name || 'Operator';
+  const initials = (user?.name || 'OP').split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
+  document.getElementById('nav-avatar').textContent = initials;
+
+  async function loadChecklists() {
+    const container = document.getElementById('checklists-container');
+    try {
+      const res  = await fetch(`/api/manifest`, { credentials: 'include' });
+
+      if (res.status === 401) {
+        window.location.href = '/login';
+        return;
+      }
+
+      const checklists = await res.json();
+
+      if (!checklists.length) {
+        container.innerHTML = `
+          <div class="empty-state">
+            <h3>No checklists assigned</h3>
+            <p>Contact your administrator to get checklists assigned to your account.</p>
+          </div>`;
+        return;
+      }
+
+      // Group by category
+      const groups = {};
+      checklists.forEach(c => {
+        const cat = c.category || 'General';
+        groups[cat] = groups[cat] || [];
+        groups[cat].push(c);
+      });
+
+      let html = '';
+      for (const [category, items] of Object.entries(groups)) {
+        html += `<div class="section-group">
+          <div class="group-title">${category}</div>
+          <div class="card-grid">`;
+        items.forEach(item => {
+          html += `
+            <div class="checklist-card">
+              <div class="card-top">
+                <div>
+                  <h3>${item.title}</h3>
+                  <div class="card-machine">${item.machine_type || ''}</div>
+                </div>
+                <span class="badge badge-pending">⏱ Pending</span>
+              </div>
+              <div class="card-meta">
+                <div class="meta-row">
+                  <span class="meta-label">Form Code:</span>
+                  <span class="meta-val">${item.slug}</span>
+                </div>
+                <div class="meta-row">
+                  <span class="meta-label">Date:</span>
+                  <span class="meta-val">${new Date().toLocaleDateString('en-IN')}</span>
+                </div>
+              </div>
+              <a href="${item.form_path}" class="btn-start">Start Checklist →</a>
+            </div>`;
+        });
+        html += `</div></div>`;
+      }
+
+      container.innerHTML = html;
+
+    } catch (e) {
+      container.innerHTML = `<div class="empty-state"><h3>Connection error</h3><p>Make sure Flask is running on port 5000.</p></div>`;
+    }
+  }
+
+  async function signOut() {
+    await fetch(`/logout`, { credentials: 'include' }).catch(() => {});
+    localStorage.removeItem('mahle_user');
+    window.location.href = '/login';
+  }
+
+  loadChecklists();
+</script>
+</body>
+</html>

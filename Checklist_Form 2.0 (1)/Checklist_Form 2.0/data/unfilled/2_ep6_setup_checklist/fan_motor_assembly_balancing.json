@@ -1,0 +1,168 @@
+{
+  "checklist_type": "fan_motor_assembly_balancing",
+  "category": "2. EP6 SETUP Checklist",
+  "machine_type": "FAN MOTOR AND BALANCING",
+  "title": "SET UP CHANGE CHECK LIST - FAN - MOTOR ASSEMBLY & BALANCING (Radiator Assembly Cell 4)",
+  "source_workbook": "FAN - MOTOR ASSEMBLY & BALANCING.xlsx",
+  "metadata": {
+    "date": "",
+    "condition": "",
+    "model_change_from": "",
+    "model_to": "",
+    "shift": ""
+  },
+  "sections": [
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_01",
+          "serial_no": "1",
+          "item": "Preparation",
+          "question": "Check the availability of material as per Material Matrix for Production.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_02",
+          "serial_no": "2",
+          "item": "",
+          "question": "Refer the Set Up Condition Matrix for next Set up or Model Change.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_03",
+          "serial_no": "3",
+          "item": "",
+          "question": "Check the availability and condition of connectors for next model",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_04",
+          "serial_no": "4",
+          "item": "",
+          "question": "Check the availability of allenkey set for next setup",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "ON LINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_05",
+          "serial_no": "5",
+          "item": "Remove",
+          "question": "Remove the connector from the machine ( Balancing)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_06",
+          "serial_no": "6",
+          "item": "",
+          "question": "Remove the fixture ( Fan motor assembly)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_07",
+          "serial_no": "7",
+          "item": "Fit",
+          "question": "Take the supply connector for the next model and connect it in the machine \n(Balancing)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_08",
+          "serial_no": "8",
+          "item": "",
+          "question": "Keep the fixture ( fan motor assembly - As per Model)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_09",
+          "serial_no": "9",
+          "item": "Adjust",
+          "question": "Change the programme as per WI (Balancing)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_10",
+          "serial_no": "",
+          "item": "Check",
+          "question": "Motor Clamping Jaw Setting & Condition",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_11",
+          "serial_no": "10",
+          "item": "",
+          "question": "Check the connector is properly locked (Balancing)",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_12",
+          "serial_no": "11",
+          "item": "",
+          "question": "Mention the programme number of balancing machine in First Piece.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_13",
+          "serial_no": "12",
+          "item": "",
+          "question": "Check condition of all removed tools if found ok then put ok tag if found not ok send for correction",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_14",
+          "serial_no": "13",
+          "item": "",
+          "question": "Remove all previous model materials if not required",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_15",
+          "serial_no": "14",
+          "item": "",
+          "question": "Produce & fill the First Piece.",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        },
+        {
+          "id": "activity_16",
+          "serial_no": "Created By",
+          "item": "",
+          "question": "Yogesh C",
+          "answer_type": "OK/NOT OK",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "set_up_start_time": "",
+    "set_up_end_time": "",
+    "total_set_up_time": "",
+    "set_up_done_by": "",
+    "set_up_approved_by_cc": "",
+    "set_up_approved_time": "",
+    "samir_d": ""
+  }
+}
