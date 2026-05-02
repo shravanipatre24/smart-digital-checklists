@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "date": "2026-04-21",
+    "condition": "A",
+    "model_change_from": "A",
+    "model_to": "B",
+    "shift": "A"
+  },
+  "sections": [
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_01",
+          "value": "OK"
+        },
+        {
+          "id": "activity_02",
+          "value": "OK"
+        },
+        {
+          "id": "activity_03",
+          "value": "OK"
+        },
+        {
+          "id": "activity_04",
+          "value": "OK"
+        },
+        {
+          "id": "activity_13",
+          "value": "OK"
+        },
+        {
+          "id": "activity_14",
+          "value": "OK"
+        },
+        {
+          "id": "activity_15",
+          "value": "OK"
+        },
+        {
+          "id": "activity_16",
+          "value": "OK"
+        }
+      ]
+    },
+    {
+      "title": "ON LINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_05",
+          "value": "OK"
+        },
+        {
+          "id": "activity_06",
+          "value": "OK"
+        },
+        {
+          "id": "activity_07",
+          "value": "OK"
+        },
+        {
+          "id": "activity_08",
+          "value": "OK"
+        },
+        {
+          "id": "activity_09",
+          "value": "OK"
+        },
+        {
+          "id": "activity_10",
+          "value": "OK"
+        },
+        {
+          "id": "activity_11",
+          "value": "OK"
+        },
+        {
+          "id": "activity_12",
+          "value": "OK"
+        }
+      ]
+    },
+    {
+      "title": "OFFLINE ACTIVITY Please write 'OK' after the completion of each activity",
+      "items": [
+        {
+          "id": "activity_01",
+          "value": "OK"
+        },
+        {
+          "id": "activity_02",
+          "value": "OK"
+        },
+        {
+          "id": "activity_03",
+          "value": "OK"
+        },
+        {
+          "id": "activity_04",
+          "value": "OK"
+        },
+        {
+          "id": "activity_13",
+          "value": "OK"
+        },
+        {
+          "id": "activity_14",
+          "value": "OK"
+        },
+        {
+          "id": "activity_15",
+          "value": "OK"
+        },
+        {
+          "id": "activity_16",
+          "value": "OK"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "set_up_start_time": "2026-04-21T02:00",
+    "set_up_end_time": "2026-04-21T06:00",
+    "total_set_up_time": "3",
+    "set_up_done_by": "SHRAVANI PATRE"
+  }
+}

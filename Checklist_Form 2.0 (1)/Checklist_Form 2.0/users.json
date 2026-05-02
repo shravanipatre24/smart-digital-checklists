@@ -23,5 +23,25 @@
       "fms",
       "leak_testing"
     ]
+  },
+  {
+    "name": "Shravani Patre",
+    "employee_id": "OP002",
+    "password": "123456",
+    "role": "Operator",
+    "assigned_checklists": [
+      "1_ep6_crimping_startup",
+      "wheel_crimping"
+    ]
+  },
+  {
+    "name": "Shravani Patre",
+    "employee_id": "OP003",
+    "password": "123456",
+    "role": "Operator",
+    "assigned_checklists": [
+      "1_ep6_crimping_startup",
+      "fan_motor_assembly_balancing"
+    ]
   }
 ]
